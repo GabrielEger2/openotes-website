@@ -8,6 +8,7 @@ export default {
     extend: {
       colors: {
         onwhite: "#fcffff",
+        onorange400: "#e47830",
         onorange: "#e16919",
         ongray: "#2f3337",
         ongreen200: "#1e550d",

@@ -3,22 +3,22 @@ import { MdMusicNote, MdClose } from 'react-icons/md';
 import { motion } from 'framer-motion';
 
 const Navbar = () => {
-  const [nav, setNav] = useState(false);
-  const [mobileNav, setMobileNav] = useState(false);
+  const [nav, setNav] = useState(false); // Setting up a state variable for the navigation menu
+  const [mobileNav, setMobileNav] = useState(false); // Setting up a state variable for the mobile navigation menu
   const [scrollPos, setScrollPos] = useState(0);
 
   const handleMobileNav = () => {
-    setMobileNav(!mobileNav);
+    setMobileNav(!mobileNav); // Toggling the value of the navigation menu state variable
   };
 
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollPos = window.scrollY;
       if (currentScrollPos > scrollPos) {
-        // Scrolling down, make navbar smaller
+        // Scrolling down, makes navbar smaller
         setNav(true);
       } else {
-        // Scrolling up, make navbar bigger
+        // Scrolling up, makes navbar bigger
         setNav(false);
       }
       setScrollPos(currentScrollPos);
@@ -29,12 +29,12 @@ const Navbar = () => {
   }, [scrollPos]);
 
   useEffect(() => {
-    let timeoutId;
+    let timeoutId: number;
 
     const handleScrollEnd = () => {
       timeoutId = setTimeout(() => {
         setNav(false);
-      }, 500);
+      }, 400);
     };
 
     const handleScroll = () => {
@@ -77,14 +77,14 @@ const Navbar = () => {
             <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-onorange"></span>
           </li>
         </ul>
-        <div className="text-onwhite bg-onorange p-1 rounded-full block md:hidden" onClick={handleMobileNav}>
+        <div className="text-onwhite bg-onorange p-1 rounded-full block md:hidden cursor-pointer" onClick={handleMobileNav}>
           {!mobileNav ? <MdMusicNote size={30} /> : <MdClose size={30} />}
         </div>
-        <div className=" z-50">
+        <div className=" z-50 block md:hidden">
           <div
             className={
               !mobileNav
-                ? 'ease-in-out duration-100 fixed left-[-100%]'
+                ? 'ease-in-out duration-100 fixed left-[-100%] '
                 : 'fixed left-0 top-0 w-[60%] h-full border-r border-r-ongray bg-gray-50 ease-in-out duration-500'
             }
           >
@@ -92,16 +92,16 @@ const Navbar = () => {
               Openotes
             </h1>
             <ul className="text-onorange font-bold">
-              <li className="p-4 text-2xl border-b border-gray-100">
+              <li className="p-4 text-2xl border-b border-gray-200">
                 <a href="#home">Home</a>
               </li>
-              <li className="p-4 text-2xl border-b border-gray-100">
+              <li className="p-4 text-2xl border-b border-gray-200">
                 <a href="#home">About</a>
               </li>
-              <li className="p-4 text-2xl border-b border-gray-100">
+              <li className="p-4 text-2xl border-b border-gray-200">
                 <a href="#home">Contact</a>
               </li>
-              <li className="p-4 text-2xl border-b border-gray-100">
+              <li className="p-4 text-2xl border-b border-gray-200">
                 <a href="#home">Support</a>
               </li>
             </ul>
