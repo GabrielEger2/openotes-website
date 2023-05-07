@@ -70,7 +70,7 @@ const Navbar = () => {
               <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-onorange"></span>
             </li>
             <li className="group px-4 text-2xl font-bold transition duration-300">
-              <a href="#home">Contact</a>
+              <a href="#home">Newsletter</a>
               <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-onorange"></span>
             </li>
             <li className="group px-4 text-2xl font-bold transition duration-300">
@@ -100,7 +100,7 @@ const Navbar = () => {
                   <a href="#home">About</a>
                 </li>
                 <li className="p-4 text-2xl border-b border-gray-200">
-                  <a href="#home">Contact</a>
+                  <a href="#home">Newsletter</a>
                 </li>
                 <li className="p-4 text-2xl border-b border-gray-200">
                   <a href="#home">Support</a>

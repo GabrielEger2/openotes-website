@@ -1,3 +1,4 @@
+import About from './components/About'
 import Footer from './components/Footer'
 import HeroBanner from './components/HeroBanner'
 import Navbar from './components/Navbar'
@@ -8,6 +9,7 @@ function App() {
     <div>
       <Navbar />
       <HeroBanner />
+      <About />
       <Footer />
     </div>
   )
