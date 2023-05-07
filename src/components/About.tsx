@@ -55,7 +55,7 @@ const About = () => {
                     </div>
                     <div className="flex items-center mt-4 justify-center">
                         <span className="text-sm font-medium text-onblue600">1&nbsp;star</span>
-                        <div className="w-6 md:w-96 h-5 mx-4 bg-gray-200 rounded">
+                        <div className="w-60 md:w-96 h-5 mx-4 bg-gray-200 rounded">
                             <div className="h-5 bg-onyellow400 rounded" style={{ width: "1%"}}></div>
                         </div>
                         <span className="text-sm font-medium text-onblue600">1%</span>
