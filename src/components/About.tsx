@@ -67,10 +67,10 @@ const About = () => {
                         <p>"<span className="title-font text-onorange">Openotes</span> translates sheet music into easy-to-follow tutorials, making music accessible to everyone regardless of skill level or financial constraints. Start playing your favorite songs today!"</p>
                         <div className="mt-6 flex items-center justify-center lg:justify-normal space-x-3">
                             <a href="/" className="w-40 lg:w-52 transition duration-300 hover:shadow-lg">
-                            <img src={appStore} className="object-cover object-top w-full h-auto mx-auto" alt="" />
+                            <img src={appStore} className="object-cover object-top w-full h-auto mx-auto" alt="App Store Icon" />
                             </a>
                             <a href="/" className="w-40 lg:w-52 transition duration-300 hover:shadow-lg">
-                            <img src={playStore} className="object-cover object-top w-full h-auto mx-auto" alt="" />
+                            <img src={playStore} className="object-cover object-top w-full h-auto mx-auto" alt="Play store Icon" />
                             </a>
                         </div>
                     </blockquote>
