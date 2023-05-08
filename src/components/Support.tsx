@@ -13,7 +13,7 @@ const Support = () => {
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
                 <div className="max-w-sm bg-onorange border border-onorange600 rounded-lg shadow">
                     <a href="#">
-                        <img className="rounded-t-lg" src={supportCode} alt="" />
+                        <img className="rounded-t-lg" src={supportCode} alt="Image of a coding screen" />
                     </a>
                     <div className="p-5">
                         <a href="#">
@@ -28,7 +28,7 @@ const Support = () => {
                 </div>
                 <div className="max-w-sm bg-onorange border border-onorange600 rounded-lg shadow">
                     <a href="#">
-                        <img className="rounded-t-lg" src={supportCoffee} alt="" />
+                        <img className="rounded-t-lg" src={supportCoffee} alt="Logo of Buy Me a Coffee" />
                     </a>
                     <div className="p-5">
                         <a href="#">
@@ -43,7 +43,7 @@ const Support = () => {
                 </div>
                 <div className="max-w-sm bg-onorange border border-onorange600 rounded-lg shadow">
                     <a href="#">
-                        <img className="rounded-t-lg" src={supportApp} alt="" />
+                        <img className="rounded-t-lg" src={supportApp} alt="Image with the android and apple logos" />
                     </a>
                     <div className="p-5">
                         <a href="#">

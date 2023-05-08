@@ -3,7 +3,7 @@ import playStore from '../assets/imgs/google-play.png';
 
 const About = () => {
   return (
-        <div className="lg:mt-36 sm:mt-40 mt-32 px-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+        <div className="mt-4 px-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
             <div className="flex flex-col items-center justify-between w-full mb-10 lg:flex-row">
                 <div className="mb-16 lg:mb-0 lg:max-w-lg lg:pr-5">
                     <div className="max-w-xl mb-6 text-center lg:text-left">
