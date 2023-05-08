@@ -1,20 +1,20 @@
 const NewsLetter = () => {
   return (
-    <div className="bg-onorange mt-20 mb-32 text-ongray">
-        <div className="px-6 py-12 md:px-12 text-center lg:text-left">
+    <div className="bg-onorange mt-16 mb-16 text-ongray">
+        <div className="px-6 py-2 md:py-12 md:px-12 text-center lg:text-left">
             <div className="container mx-auto xl:px-32">
                 <div className="grid lg:grid-cols-2 gap-12 items-center">
-                    <div className="mt-12 lg:mt-0">
+                    <div className="mt-6 md:mt-12 lg:mt-0">
                         <h1
-                        className="text-5xl md:text-6xl xl:text-7xl font-bold tracking-tight mb-12 text-onwhite"
+                        className="text-5xl md:text-6xl xl:text-7xl font-bold tracking-tight mb-6  md:mb-12 text-onwhite"
                         >
                         Stay in Tune. <br/> Don't Miss Anything!
                         </h1>
-                        <p className="mb-4 lead text-onwhite">
+                        <p className="md:mb-4 lead text-onwhite">
                             Don't worry. At our newsletter, we believe that quality always trumps quantity
                         </p>
                     </div>
-                <div className="mb-12 lg:mb-0">
+                <div className="mb-6 md:mb-12 lg:mb-0">
                     <div className="block rounded-lg shadow-lg bg-white px-6 py-12 md:px-12">
                     <h2 className="text-3xl font-bold mb-12">Subscribe to the newsletter</h2>
                     <form>
@@ -50,7 +50,7 @@ const NewsLetter = () => {
                         </button>
                     </form>
                     </div>
-                    </div>
+                </div>
                 </div>
             </div>
         </div>

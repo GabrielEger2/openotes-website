@@ -62,17 +62,17 @@ const About = () => {
                     </div>
                 </div>
                 </div>
-                <div className="flex items-center justify-center lg:w-1/2 lg:translate-y-6">
+                <div className="flex items-center justify-center lg:w-1/2 lg:translate-y-4">
                     <blockquote className=" text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl italic font-semibold lg:text-left text-ongray lg:translate-x-8 translate-x-0 lg:mt-2">
                         <p>"<span className="title-font text-onorange">Openotes</span> translates sheet music into easy-to-follow tutorials, making music accessible to everyone regardless of skill level or financial constraints. Start playing your favorite songs today!"</p>
-                <div className="mt-6 flex items-center justify-center lg:justify-normal space-x-3">
-                <a href="/" className="w-40 lg:w-52 transition duration-300 hover:shadow-lg">
-                <img src={appStore} className="object-cover object-top w-full h-auto mx-auto" alt="" />
-                </a>
-                <a href="/" className="w-40 lg:w-52 transition duration-300 hover:shadow-lg">
-                <img src={playStore} className="object-cover object-top w-full h-auto mx-auto" alt="" />
-                </a>
-            </div>
+                        <div className="mt-6 flex items-center justify-center lg:justify-normal space-x-3">
+                            <a href="/" className="w-40 lg:w-52 transition duration-300 hover:shadow-lg">
+                            <img src={appStore} className="object-cover object-top w-full h-auto mx-auto" alt="" />
+                            </a>
+                            <a href="/" className="w-40 lg:w-52 transition duration-300 hover:shadow-lg">
+                            <img src={playStore} className="object-cover object-top w-full h-auto mx-auto" alt="" />
+                            </a>
+                        </div>
                     </blockquote>
                 </div>   
             </div>

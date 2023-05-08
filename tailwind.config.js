@@ -11,6 +11,8 @@ export default {
         onwhite100: "#e3e6e6",
         onorange400: "#e47830",
         onorange: "#e16919",
+        onorange600: "#b45414",
+        onorange700: "#873f0f",
         ongray: "#2f3337",
         ongreen200: "#1e550d",
         ongreen300: "#2c8013",

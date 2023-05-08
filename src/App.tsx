@@ -3,6 +3,7 @@ import Footer from './components/Footer'
 import HeroBanner from './components/HeroBanner'
 import Navbar from './components/Navbar'
 import NewsLetter from './components/NewsLetter'
+import Support from './components/Support'
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
       <HeroBanner />
       <About />
       <NewsLetter />
+      <Support />
       <Footer />
     </div>
   )
