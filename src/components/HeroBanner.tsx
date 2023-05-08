@@ -1,5 +1,5 @@
 import orangeNotes from '../assets/imgs/OrangeNotes.png'
-import orangePhone from '../assets/imgs/OrangePhone.png'
+import orangePhone from '../assets/imgs/orangephone.png'
 import FullScreenNotes from '../assets/imgs/FullScreenMusicNotes.png'
 import ReactTyped from 'react-typed';
 
