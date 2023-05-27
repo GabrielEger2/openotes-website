@@ -4,7 +4,7 @@ import supportCoffee from '../assets/imgs/supportCoffee.png'
 
 const Support = () => {
     return (
-      <div className="flex justify-center">
+      <div className="flex justify-center" id='support'>
         <div className="max-w-[1640px] m-auto px-4">
             <h2 className='flex justify-center text-6xl text-onorange title-font mb-20'>
                 Support Us

@@ -12,6 +12,30 @@ const Navbar = () => {
   };
 
   useEffect(() => {
+    const handleLinkClick = (event) => {  // Defining a function to handle click events on the navigation menu links
+      event.preventDefault();
+      const target = event.target.hash;
+      const element = document.querySelector(target);
+      if (element) {
+        const topOffset = element.offsetTop;
+        window.scrollTo({  // Scrolling the window to the target element
+          top: topOffset -110,
+          behavior: 'smooth',
+        });
+      }
+    };
+    const links = document.querySelectorAll('a[href^="#"]');  // Selecting all the navigation menu links with the href attribute starting with "#"
+    links.forEach((link) => {
+      link.addEventListener('click', handleLinkClick);  // Adding the event listener to each link
+    });
+    return () => {
+      links.forEach((link) => {
+        link.removeEventListener('click', handleLinkClick);  // Removing the event listener from each link on component unmount
+      });
+    };
+  }, []);
+
+  useEffect(() => {
     const handleScroll = () => {
       const currentScrollPos = window.scrollY;
       if (currentScrollPos > scrollPos) {
@@ -52,9 +76,6 @@ const Navbar = () => {
         className={`bg-gray-50 fixed top-0 w-full z-50 shadow-lg ${
           nav ? 'h-16' : 'h-20' 
         } transition-all duration-500 ease-in-out`}
-        initial={{ y: -100 }}
-        animate={{ y: 0 }}
-        transition={{ duration: 0.5, ease: 'easeInOut' }}
       >
         <div className="flex justify-between items-center h-full max-w-[1200px] mx-auto px-6">
           <h1 className="w-full text-4xl font-bold mb-1 text-ongray title-font">
@@ -66,15 +87,15 @@ const Navbar = () => {
               <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-onorange"></span>
             </li>
             <li className="group px-4 text-2xl font-bold transition duration-300">
-              <a href="#home">About</a>
+              <a href="#about">About</a>
               <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-onorange"></span>
             </li>
             <li className="group px-4 text-2xl font-bold transition duration-300">
-              <a href="#home">Newsletter</a>
+              <a href="#news">Newsletter</a>
               <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-onorange"></span>
             </li>
             <li className="group px-4 text-2xl font-bold transition duration-300">
-              <a href="#home">Support</a>
+              <a href="#support">Support</a>
               <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-onorange"></span>
             </li>
           </ul>
